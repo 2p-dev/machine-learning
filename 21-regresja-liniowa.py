@@ -10,7 +10,7 @@ np.random.seed(0)
 # funkcja fit potrzebuje jako pierwszy parametr - tablicę tablic [[],[],[]] 
 # zatem aby wygenerować taką tablicę losową można albo skorzystać z parametrów funcji rand(wymiar0, wymiar1, ...)
 # albo skorzystać z metody reshape() na liście jednowymiarowej
-# np.: np.random.rand(100).reshape(100,-1)
+# np.: np.random.rand(100).reshape(-1,1)
 X = np.random.rand(100, 1)  # Zmienna niezależna 
 
 # Tworzymy sobie zmienną zależną, na podstawie równania y = 2.5 * x + 8, 
@@ -119,8 +119,8 @@ y_arr = [ 13, 0, 2, -20,  -25, -60, -90, -150]
 X_test = [-100, 30, 200]
 
 
-X = np.array(X_arr).reshape(8, -1)
-y = np.array(y_arr).reshape(8, -1)
+X = np.array(X_arr).reshape(-1, 1)
+y = np.array(y_arr).reshape(-1, 1)
 
 model = LinearRegression()
 model.fit(X, y)
@@ -145,5 +145,5 @@ plt.ylabel('y')
 plt.legend()
 plt.show()
 
-y_pred = model.predict(np.array(X_test).reshape(3, -1))  
+y_pred = model.predict(np.array(X_test).reshape(-1, 1))  
 print (y_pred)
