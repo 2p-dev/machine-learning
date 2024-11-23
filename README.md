@@ -12,6 +12,11 @@ https://www.wydawnictwo.agh.edu.pl/produkt/1158-podstawy-uczenia-maszynowego
 https://winntbg.bg.agh.edu.pl/skrypty4/0599/podstawy_uczenia.pdf
 
 
+## Materiały przygotowawcze do EITC/AI/MLP (angielski)
+
+https://eitca.org/wp-content/uploads/materials/eitca_exam_mat_short_eitc-ai-mlp.pdf
+
+
 ## Python Machile Learning na w3school
 
 https://www.w3schools.com/python/python_ml_getting_started.asp
