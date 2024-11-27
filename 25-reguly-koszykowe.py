@@ -34,16 +34,16 @@ from mlxtend.frequent_patterns import apriori, association_rules
 
 # Przykładowe dane transakcyjne
 transactions = [
-    ['milk', 'bread', 'butter'],
-    ['bread', 'butter'],
-    ['milk', 'bread'],
-    ['milk', 'bread', 'butter'],
-    ['bread', 'butter'],
-    ['butter', 'eggs'],
-    ['milk', 'eggs'],
-    ['eggs', 'bread'],
-    ['milk', 'bread', 'eggs', 'butter'],
-    ['bread', 'butter', 'eggs']
+    ['mleko', 'chleb', 'masło'],
+    ['chleb', 'masło'],
+    ['mleko', 'chleb'],
+    ['mleko', 'chleb', 'masło'],
+    ['chleb', 'masło'],
+    ['masło', 'jajka'],
+    ['mleko', 'jajka'],
+    ['jajka', 'chleb'],
+    ['mleko', 'chleb', 'jajka', 'masło'],
+    ['chleb', 'masło', 'jajka']
 ]
 
 # Przekształcenie danych do formatu odpowiedniego dla algorytmu
@@ -79,8 +79,8 @@ def recommend_products(rules, product, top_n=3):
     # Zwracamy top_n rekomendowanych produktów
     return recommended_products[:top_n]
 
-# Przykład: rekomendacja produktów dla "milk"
-product = 'milk'
+# Przykład: rekomendacja produktów dla "mleko"
+product = 'mleko'
 recommended_products = recommend_products(rules, product, top_n=3)
 print(f"Rekomendowane produkty dla '{product}': {recommended_products}")
 
